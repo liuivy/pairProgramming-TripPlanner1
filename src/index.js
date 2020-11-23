@@ -10,11 +10,13 @@ const map = new mapboxgl.Map({
 });
 
 
-const markerDomEl = document.createElement("div");
+let markerDomEl = document.createElement("div");
 markerDomEl.style.width = "32px";
 markerDomEl.style.height = "39px";
 // markerDomEl.style.backgroundColor = 'red';
 markerDomEl.style.backgroundImage = "url(https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/67-512.png)";
+markerDomEl.style.backgroundSize = "32px 39px";
+
 
 new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
